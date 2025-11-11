@@ -1,7 +1,5 @@
-// largest_and_smallest_test.dart
 import 'package:test/test.dart';
-
-import 'largest.dart';
+import 'largestAndSmallest.dart';
 
 void main() {
   test('Find largest and smallest of three numbers', () {
