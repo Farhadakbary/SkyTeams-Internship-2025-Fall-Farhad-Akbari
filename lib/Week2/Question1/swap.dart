@@ -1,3 +1,9 @@
+/* Farhad Akbari
+Week 2
+11/11/2025
+1. Swap two variables without using a temporary variable
+ */
+
 int swapAandB(int a, int b) {
   a = a + b;
   b = a - b;
