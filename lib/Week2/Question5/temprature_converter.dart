@@ -1,3 +1,9 @@
+/* Farhad Akbari
+Week 2
+11/11/2025
+4. Temperature converter (Celsius ↔ Fahrenheit)
+ */
+
 Map<String, double> temperatureConverter(double value, String type) {
   double result;
 

@@ -1,3 +1,10 @@
+
+/* Farhad Akbari
+Week 2
+11/11/2025
+2.  Find the largest and smallest of three numbers
+ */
+
 Map<String,int> largestAndSmallest(int firstNumber, int secondNumber, int thirdNumber) {
   int max = firstNumber;
   int min = firstNumber;

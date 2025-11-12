@@ -1,3 +1,9 @@
+/* Farhad Akbari
+Week 2
+11/11/2025
+6. Convert total seconds into hours, minutes, and seconds
+ */
+
 Map<String, double> secondConverter(double second, String type) {
   double result;
 
