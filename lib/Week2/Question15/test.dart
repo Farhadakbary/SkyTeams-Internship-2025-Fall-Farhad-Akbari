@@ -1,5 +1,6 @@
 import 'package:sky/Week2/Question15/triangle.dart';
-import 'package:test/test.dart';
+import
+'package:test/test.dart';
 void main(){
     group('Triangle Type Tests', () {
 
