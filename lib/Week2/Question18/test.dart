@@ -19,5 +19,5 @@ void main() {
 
     expect(result, equals(expected));
   });
-
+print(multiplication(4));
 }
