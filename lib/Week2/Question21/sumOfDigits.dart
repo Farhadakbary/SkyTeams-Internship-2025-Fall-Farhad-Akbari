@@ -11,6 +11,7 @@ Output:
  */
 int sumOfDigits(int number){
   int sum= 0;
+  number=number.abs();
  while(number != 0){
    sum = sum + number %10;
    number ~/= 10;

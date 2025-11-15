@@ -14,6 +14,7 @@
 // 5 × 10 = 50
 String multiplication(int number){
   List<String> lineOfMultiply=[];
+  // number=number.abs();
   for(int i=1; i<=10; i++){
   lineOfMultiply.add(('$number × $i = ${number * i}'));
   }

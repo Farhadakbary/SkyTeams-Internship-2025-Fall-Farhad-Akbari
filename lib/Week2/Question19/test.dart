@@ -12,5 +12,7 @@ void main(){
     test('Reverse digits with zero', () {
       expect(reverseNumber(7), equals(7));
     });
-
+  test('Reverse digits with zero', () {
+    expect(reverseNumber(-7989), equals(9897));
+  });
 }

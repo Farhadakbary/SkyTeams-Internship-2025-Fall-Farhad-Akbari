@@ -3,9 +3,10 @@ import 'package:test/test.dart';
 void main(){
   test('Should add the natural numbers', (){
     expect(sumOfNatural(5), equals(15));
-
-    expect(sumOfNatural(3), equals(6));
-
     print(sumOfNatural(3));
+  });
+  test('Should add natural numbers', (){
+
+    expect(sumOfNatural(-4), equals(0));
   });
 }
