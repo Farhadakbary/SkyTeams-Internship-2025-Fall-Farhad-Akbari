@@ -2,18 +2,38 @@
 Week 2
 11/12/2025
 14. Check character type
+Description: Input a character and determine if it’s a vowel, consonant, digit, or special symbol.
+Example:
+Input:
+a
+Output:
+Vowel
  */
-String charectarChecker(String char) {
-  if(char.length != 1){
+
+// contains methode
+
+
+String characterChecker(String char) {
+  if (char.length != 1) {
     throw ArgumentError('Enter only one character');
   }
-  String charectar = char.toLowerCase();
+// contain methode
+  bool myContains(String source, String target) {
+    for (int i = 0; i < source.length; i++) {
+      if (source[i] == target) {
+        return true;
+      }
+    }
+    return false;
+  }
 
-  if ('aeiou'.contains(charectar)) {
+  String character = char.toLowerCase();
+
+  if (myContains('aeiou', character)) {
     return 'Vowel';
-  } else if ('bcdfghjklmnpqrstvwyxz'.contains(charectar)) {
+  } else if (myContains('bcdfghjklmnpqrstvwyxz', character)) {
     return 'Consonant';
-  } else if ('0123456789'.contains(charectar)) {
+  } else if (myContains('0123456789', character)) {
     return 'Number';
   } else {
     return 'Special Character';

@@ -6,7 +6,6 @@ void main(){
     print(sumOfNatural(3));
   });
   test('Should add natural numbers', (){
-
     expect(sumOfNatural(-4), equals(0));
   });
 }

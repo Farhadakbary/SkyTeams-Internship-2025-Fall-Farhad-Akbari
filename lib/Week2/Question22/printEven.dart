@@ -9,12 +9,12 @@ Input:
 Output:
 2, 4, 6, 8, 10
  */
-String printEvenNumbers(int start, int end){
-  List<String> evenNumbers=[];
-  for(int i= start; i<= end; i++){
- if(i %2==0){
-   evenNumbers.add('$i');
- }
+String printEvenNumbers(int start, int end) {
+  List<String> evenNumbers = [];
+  for (int i = start; i <= end; i++) {
+    if (i % 2 == 0) {
+      evenNumbers.add('$i');
+    }
   }
   return evenNumbers.join(', ');
 }
