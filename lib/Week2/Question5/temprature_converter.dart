@@ -2,6 +2,15 @@
 Week 2
 11/11/2025
 4. Temperature converter (Celsius ↔ Fahrenheit)
+Description: Convert temperature from Celsius to Fahrenheit and vice versa.
+Formula:
+F = (C × 9/5) + 32
+C = (F - 32) × 5/9
+Example:
+Input:
+C = 25
+Output:
+F = 77
  */
 
 Map<String, double> temperatureConverter(double value, String type) {

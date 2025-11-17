@@ -2,13 +2,19 @@ import 'package:sky/Week2/Question12/traficLight.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('Green should return go', () {
-    expect(trafficLight('green'), equals('Go'));
+  test('Red light should return Stop', () {
+    expect(trafficLight(TrafficColor.red), equals('Stop'));
   });
-  test('Yellow should return ready', () {
-    expect(trafficLight('yellow'), equals('Ready'));
+
+  test('Yellow light should return Ready', () {
+    expect(trafficLight(TrafficColor.yellow), equals('Ready'));
   });
-  test('Red should return stop', () {
-    expect(trafficLight('red'), equals('Stop'));
+
+  test('Green light should return Go', () {
+    expect(trafficLight(TrafficColor.green), equals('Go'));
+  });
+
+  test('Passing invalid type should throw error', () {
+    expect(() => trafficLight(TrafficColor.values.firstWhere((c) => false)), throwsA(isA<StateError>()));
   });
 }

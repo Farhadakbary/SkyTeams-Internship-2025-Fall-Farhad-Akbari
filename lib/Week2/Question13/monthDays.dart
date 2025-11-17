@@ -2,6 +2,12 @@
 Week 2
 11/12/2025
 13. Month name & number of days using switch-case
+Description: Input a month number (1–12) and display its name and number of days.
+Example:
+Input:
+2
+Output:
+February, 28 or 29 days
  */
 String monthDays(int monthNumber) {
   switch (monthNumber) {
