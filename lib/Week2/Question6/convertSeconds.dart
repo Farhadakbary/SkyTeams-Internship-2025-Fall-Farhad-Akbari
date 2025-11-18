@@ -2,6 +2,12 @@
 Week 2
 11/11/2025
 6. Convert total seconds into hours, minutes, and seconds
+Description: Convert a given number of seconds into hours, minutes, and seconds format.
+Example:
+Input:
+3665
+Output:
+1 hr, 1 min, 5 sec
  */
 
 Map<String, double> secondConverter(double second, String type) {

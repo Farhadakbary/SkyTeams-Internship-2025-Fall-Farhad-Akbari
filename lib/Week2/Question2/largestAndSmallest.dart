@@ -2,7 +2,13 @@
 /* Farhad Akbari
 Week 2
 11/11/2025
-2.  Find the largest and smallest of three numbers
+2. Find the largest and smallest of three numbers
+Description: Read three integers and print the largest and smallest.
+Example:
+Input:
+3, 9, 5
+Output:
+Largest: 9, Smallest: 3
  */
 
 Map<String,int> largestAndSmallest(int firstNumber, int secondNumber, int thirdNumber) {
