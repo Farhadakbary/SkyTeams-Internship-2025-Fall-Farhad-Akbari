@@ -94,7 +94,7 @@ class _AllFoodsScreenState extends State<AllFoodsScreen> {
                   double itemWidth =
                       (constraints.maxWidth - totalHorizontalPadding) /
                       crossAxisCount;
-                  double itemHeight = itemWidth / 1.2; // childAspectRatio: 1.2
+                  double itemHeight = itemWidth / 1.2;
 
                   return GridView.builder(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -184,7 +184,7 @@ class _AllFoodsScreenState extends State<AllFoodsScreen> {
     return LayoutBuilder(
       builder: (context, constraints) {
         return AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
+          duration: const Duration(milliseconds: 100),
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             color: isDragging
