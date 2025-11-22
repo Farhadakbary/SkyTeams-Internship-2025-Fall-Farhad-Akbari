@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/16/2025
 10. Check whether a number is prime
 Description: Determine if a number is divisible only by 1 and itself.

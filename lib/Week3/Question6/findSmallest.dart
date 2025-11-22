@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/16/2025
 6. Write a function to find the smallest element in an array
 Description: Find and return the smallest number in an array.

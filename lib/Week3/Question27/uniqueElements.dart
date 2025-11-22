@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 27. Find Unique Elements in an Array
 Description: Return an array with only unique elements from the input array.

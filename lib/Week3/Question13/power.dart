@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/17/2025
 13. Power of a number (without built-in function)
 Description: Compute a^b using repeated multiplication.

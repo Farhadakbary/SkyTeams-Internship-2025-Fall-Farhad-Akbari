@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/18/2025
 16. Fibonacci sequence
 Description: Print the Fibonacci sequence up to N terms.

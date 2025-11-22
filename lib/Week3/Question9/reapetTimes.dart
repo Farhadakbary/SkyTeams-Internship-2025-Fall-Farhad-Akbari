@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/16/2025
 9. Write a function to count occurrences of an element in an array
 Description: Count how many times a given number appears in the array.

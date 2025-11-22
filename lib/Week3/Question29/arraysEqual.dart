@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 29. Check if Two Arrays Are Equal
 Description: Compare two arrays and determine if they contain the same elements in the same

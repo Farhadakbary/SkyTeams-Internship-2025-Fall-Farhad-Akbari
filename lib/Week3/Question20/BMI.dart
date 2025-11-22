@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/18/2025
 20. Body Mass Index (BMI) Calculator
 Description: Given weight (kg) and height (m), calculate BMI using:

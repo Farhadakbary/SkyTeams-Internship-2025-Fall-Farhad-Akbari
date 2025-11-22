@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/17/2025
 15. Check for Armstrong number
 Description: A number is Armstrong if the sum of its digits raised to the power of the number of

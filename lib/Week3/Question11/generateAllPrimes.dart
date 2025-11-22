@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/17/2025
 11. Generate all prime numbers up to N
 Description: List all prime numbers up to a given limit using a loop.

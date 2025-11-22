@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 28. Remove Duplicates from an Array
 Description: Remove duplicate elements efficiently from an array.

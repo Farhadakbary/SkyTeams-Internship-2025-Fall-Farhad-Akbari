@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/18/2025
 17. Pattern Printing – Right-angled Triangle
 Example:

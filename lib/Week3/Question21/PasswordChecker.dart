@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/18/2025
 21. Password Strength Checker
 Description: A strong password must:

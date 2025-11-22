@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 26. Convert Decimal to Binary
 Description: Convert a decimal number to its binary representation.

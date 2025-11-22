@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 25. Number Guessing Game
 Description:

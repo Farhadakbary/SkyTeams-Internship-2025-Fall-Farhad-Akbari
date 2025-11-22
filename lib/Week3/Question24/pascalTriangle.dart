@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 24. Generate Pascal’s Triangle
 Description: Implement pascalTriangle(rows), which prints Pascal’s Triangle up to n rows.

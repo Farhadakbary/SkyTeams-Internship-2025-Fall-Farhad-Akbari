@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/16/2025
 7. Write a function to find the sum of all elements in an array
 Description: Calculate the total sum of all array elements.

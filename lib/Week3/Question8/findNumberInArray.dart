@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/16/2025
 8. Write a function to check if an array contains a specific element
 Description: Determine if a given element exists in the array.

@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 30. Find Missing Number in Array (1 to N)
 Description: Given numbers from 1 to N with one missing, find the missing number.

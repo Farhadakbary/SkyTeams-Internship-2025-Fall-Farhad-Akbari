@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/17/2025
 14. Find factorial of a number
 Description: Compute N! using iterative approach.

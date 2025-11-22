@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/22/2025
 23. Calculate Factorial Using Recursion
 Description: Implement factorial(n), which calculates the factorial of n using recursion.

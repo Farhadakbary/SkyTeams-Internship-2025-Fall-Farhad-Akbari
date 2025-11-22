@@ -1,5 +1,4 @@
 /* Farhad Akbari
-Week 2
 11/17/2025
 12. Check for palindrome number
 Description: Check if a number reads the same backward and forward.
