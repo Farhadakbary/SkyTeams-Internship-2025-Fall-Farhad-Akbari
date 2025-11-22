@@ -22,6 +22,7 @@ void main() {
         [1, 1],
         [1, 2, 1],
       ]));
+      print(pascalTriangle(3));
     });
 
     test('4 rows', () {
