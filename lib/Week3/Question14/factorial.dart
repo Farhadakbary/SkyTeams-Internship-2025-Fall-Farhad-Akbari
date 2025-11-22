@@ -9,10 +9,8 @@ Output:
 120
  */
 int factorail(int number){
-  number=number.abs();
-  int result=1;
-  for(int i=1; i<=number;i++){
-    result *= i;
-  }
-  return result;
+ if(number <= 1){return 1;
+ }else {
+   return number * factorail(number - 1);
+ }
 }
