@@ -8,6 +8,12 @@ Input:
 Output:
 0, 1, 1, 2, 3, 5, 8
  */
+// fibonacci with recursion
+int fibonacci(int n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
 
 List<int> printFibonacci(int number) {
   if (number <= 0) return [];
