@@ -31,39 +31,25 @@ int changingToInt(double value) {
 String calculateBMI(double weight, double height) {
   if (weight <= 0 || height <= 0) {
     throw ArgumentError("Weight and height must be positive.");
-  }else if(height >= 3.00){
-    throw ArgumentError('You must be kidding');
-  }else if(weight >= 200){
-    throw ArgumentError('You must be kidding');
+  }
+
+  if (height > 3.0 || weight > 200) {
+    throw ArgumentError("You must be kidding");
   }
 
   double bmi = weight / (height * height);
+  double roundedBmi = double.parse(bmi.toStringAsFixed(2));
 
-  double measure = bmi * 100 + 0.5;
-
-  int temp = changingToInt(measure);
-
-  double roundedBmi = temp / 100;
-
-  BmiCategory category;
-
+  String category;
   if (roundedBmi < 18.5) {
-    category = BmiCategory.Underweight;
+    category = "Underweight";
   } else if (roundedBmi < 25) {
-    category = BmiCategory.NormalWeight;
+    category = "Normal weight";
   } else if (roundedBmi < 30) {
-    category = BmiCategory.Overweight;
+    category = "Overweight";
   } else {
-    category = BmiCategory.Obese;
+    category = "Obese";
   }
 
-  String categoryText = category == BmiCategory.Underweight
-      ? "Underweight"
-      : category == BmiCategory.NormalWeight
-      ? "Normal weight"
-      : category == BmiCategory.Overweight
-      ? "Overweight"
-      : "Obese";
-
-  return "BMI = $roundedBmi ($categoryText)";
+  return "BMI = $roundedBmi ($category)";
 }
