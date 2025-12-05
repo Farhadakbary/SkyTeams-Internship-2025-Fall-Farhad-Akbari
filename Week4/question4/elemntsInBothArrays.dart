@@ -7,14 +7,13 @@ Example:
 Input: [1, 2, 3, 4], [3, 4, 5, 6]
 Output: [3, 4]
  */
-List<int> elementsInBothArrays(List<int> firstArray, List<int> secondArray){
-List<int> result=[];
-for(int i=0; i<firstArray.length;i++){
-  for(int j=0; j< secondArray.length;j++){
-    if(firstArray[i]==secondArray[j]){
-      result.add(secondArray[j]);
+List<int> elementsInBothArrays(List<int> firstArray, List<int> secondArray) {
+  Set<int> setSecond = secondArray.toSet();
+  List<int> result = [];
+  for (var item in firstArray) {
+    if (setSecond.contains(item)) {
+      result.add(item);
     }
   }
-}
-return result;
+  return result;
 }

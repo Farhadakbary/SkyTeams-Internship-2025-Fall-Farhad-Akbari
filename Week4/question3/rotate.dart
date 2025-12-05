@@ -9,12 +9,19 @@ Output: [4, 5, 1, 2, 3]
  */
 List<int> rotateRight(List<int> arr, int k) {
   int n = arr.length;
+  if (n == 0) return [];
   k = k % n;
-
-  List<int> sectionOne = arr.sublist(n - k);
-  List<int> sectionTwo = arr.sublist(0, n - k);
-  List<int> result = [];
-  result.addAll(sectionOne);
-  result.addAll(sectionTwo);
-  return result;
+  void reverse(int start, int end) {
+    while (start < end) {
+      int temp = arr[start];
+      arr[start] = arr[end];
+      arr[end] = temp;
+      start++;
+      end--;
+    }
+  }
+  reverse(0, n - 1);
+  reverse(0, k - 1);
+  reverse(k, n - 1);
+  return arr;
 }

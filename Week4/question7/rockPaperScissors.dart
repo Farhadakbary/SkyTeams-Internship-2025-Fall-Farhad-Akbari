@@ -8,21 +8,19 @@ import 'dart:math';
 
 String playRockPaperScissors(String userChoice) {
   final choices = ['rock', 'paper', 'scissors'];
-  final random = Random();
-  String computer = choices[random.nextInt(3)];
+  final computer = choices[Random().nextInt(3)];
+
   if (userChoice == computer) {
-    return "Equal I chose $computer";
-  } else if (userChoice == 'paper' && computer == 'rock') {
-    return 'You win I chose $computer You chose $userChoice';
-  } else if (userChoice == 'rock' && computer == 'paper') {
-    return 'You lost I chose $computer You chose $userChoice';
-  } else if (userChoice == 'scissors' && computer == 'paper') {
-    return 'You win I chose $computer You chose $userChoice';
-  } else if (userChoice == 'paper' && computer == 'scissors') {
-    return 'You lost I chose $computer You chose $userChoice';
-  } else if (userChoice == 'rock' && computer == 'scissors') {
-    return 'You win I chose $computer You chose $userChoice';
-  } else  {
-    return 'You lost I chose $computer You chose $userChoice';
+    return "Equal — I chose $computer";
   }
+  final winMap = {
+    'rock': 'scissors',
+    'paper': 'rock',
+    'scissors': 'paper',
+  };
+  if (winMap[userChoice] == computer) {
+    return "You win — I chose $computer, you chose $userChoice";
+  }
+
+  return "You lost — I chose $computer, you chose $userChoice";
 }

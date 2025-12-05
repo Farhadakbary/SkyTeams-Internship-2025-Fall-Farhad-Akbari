@@ -9,25 +9,27 @@ Output: 45
  */
 int secondLargest(List<int> arr) {
   if (arr.length < 2) {
-    throw ArgumentError('You should have at least two element in an array');
+    throw ArgumentError("Array must have at least two elements");
   }
-  int largest;
-  int secondLargest;
-  if (arr[0] > arr[1]) {
-    largest = arr[0];
-    secondLargest = arr[1];
-  } else {
-    largest = arr[1];
-    secondLargest = arr[0];
-  }
-  for (int i = 2; i < arr.length; i++) {
-    int current = arr[i];
-    if (current > largest) {
-      secondLargest = largest;
-      largest = current;
-    } else if (current > secondLargest && current != largest) {
-      secondLargest = current;
+
+  int largest = arr[0];
+  for (int i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
     }
+  }
+
+  int? secondLargest;
+  for (int value in arr) {
+    if (value != largest) {
+      if (secondLargest == null || value > secondLargest) {
+        secondLargest = value;
+      }
+    }
+  }
+
+  if (secondLargest == null) {
+    throw ArgumentError("No second largest value found (all elements equal)");
   }
 
   return secondLargest;

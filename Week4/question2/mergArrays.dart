@@ -20,8 +20,14 @@ List<int> mergeArrays(List<int> firstArray, List<int> secondArray) {
       j++;
     }
   }
-  result.addAll(firstArray.sublist(i));
-  result.addAll(secondArray.sublist(j));
+  while (i < firstArray.length) {
+    result.add(firstArray[i]);
+    i++;
+  }
+  while (j < secondArray.length) {
+    result.add(secondArray[j]);
+    j++;
+  }
 
   return result;
 }

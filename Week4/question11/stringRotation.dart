@@ -8,7 +8,6 @@ Example:
  */
 bool isRotation(String text, String rotated) {
   if (text.length != rotated.length) return false;
-
   int n = text.length;
   for (int start = 0; start < n; start++) {
     if (text[start] != rotated[0]) continue;
@@ -22,6 +21,5 @@ bool isRotation(String text, String rotated) {
     }
     if (match) return true;
   }
-  return false; 
+  return false;
 }
-

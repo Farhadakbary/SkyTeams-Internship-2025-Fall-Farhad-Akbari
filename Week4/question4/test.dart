@@ -1,13 +1,30 @@
 import 'package:test/test.dart';
 import 'elemntsInBothArrays.dart';
 
-void main(){
-  test('This will return the elements in both arrays', (){
-    expect(elementsInBothArrays([1,2,3,4], [3,4,5,6]), equals([3,4]));
-    print(elementsInBothArrays([1,2,3,4], [3,4,5,6]));
-  });
-  test('This will return the elements in both arrays', (){
-    expect(elementsInBothArrays([1,2,3,4], [1,4,5,2]), equals([1,2,4]));
-    print(elementsInBothArrays([1,2,3,4], [1,4,5,2]));
+void main() {
+  group('elementsInBothArrays Tests', () {
+    test('returns elements for an arrays', () {
+      expect(elementsInBothArrays([1, 2, 3], [2, 3, 4]), [2, 3]);
+    });
+
+    test('returns empty list when no elements match', () {
+      expect(elementsInBothArrays([1, 2], [3, 4]), []);
+    });
+
+    test('returns all elements if arrays are identical', () {
+      expect(elementsInBothArrays([1, 2, 3], [1, 2, 3]), [1, 2, 3]);
+    });
+
+    test('for duplicates in first array', () {
+      expect(elementsInBothArrays([1, 2, 2, 3], [2, 3, 4]), [2, 2, 3]);
+    });
+
+    test('returns empty list if first array is empty', () {
+      expect(elementsInBothArrays([], [1, 2, 3]), []);
+    });
+
+    test('works with negative numbers', () {
+      expect(elementsInBothArrays([-1, -2, 0, 2], [-2, 0, 3]), [-2, 0]);
+    });
   });
 }

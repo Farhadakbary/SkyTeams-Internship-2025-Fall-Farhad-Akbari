@@ -6,15 +6,13 @@ Description: Generate all permutations.
 Input: "abc" → abc, acb, bac, ...
  */
 List<String> permutation(String input) {
-  if (input.length == 1) return [input];
+  if (input.length <= 1) return [input];
   List<String> result = [];
   for (int i = 0; i < input.length; i++) {
     String current = input[i];
     String remaining = input.substring(0, i) + input.substring(i + 1);
-    List<String> remainingPermutation = permutation(remaining);
-
-    for (String prem in remainingPermutation) {
-      result.add(current + prem);
+    for (String sub in permutation(remaining)) {
+      result.add(current + sub);
     }
   }
   return result;

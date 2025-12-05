@@ -19,6 +19,5 @@ String compressString(String input) {
     }
   }
   result += "${input[input.length - 1]}$count";
-
   return result;
 }

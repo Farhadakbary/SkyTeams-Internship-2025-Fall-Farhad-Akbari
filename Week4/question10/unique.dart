@@ -6,17 +6,20 @@ Description: Return whether a string contains only unique chars.
 Example:
 "hello" → Not Unique
  */
-bool isUniqueString(String text){
-
-  for(int i=0; i < text.length; i++){
-    for(int j=i+1; j <text.length; j++){
-      if(text.isEmpty)'The text is empty';
-      if(text[i]==text[j]){
-        print('$text is Not Unique String');
-        return false;
-      }
-    }
+bool isUniqueString(String text) {
+  if (text.isEmpty) {
+    print("Text is empty");
+    return false;
   }
-  print('$text is Unique String');
+  // using a set that  does not accept repeated elements
+  final seen = <String>{};
+  for (var char in text.split('')) {
+    if (seen.contains(char)) {
+      print("$text is NOT a unique string");
+      return false;
+    }
+    seen.add(char);
+  }
+  print("$text is a UNIQUE string");
   return true;
 }
