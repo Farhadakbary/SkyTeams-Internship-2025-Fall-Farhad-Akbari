@@ -22,6 +22,5 @@ List<int> reArrange(List<int> array) {
       index++;
     }
   }
-
   return result;
 }

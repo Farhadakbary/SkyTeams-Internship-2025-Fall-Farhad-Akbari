@@ -16,6 +16,3 @@ String abbreviation(String sentence){
   }
   return initials.join(' ');
 }
-void main(){
-  print(abbreviation('I am learning Java'));
-}

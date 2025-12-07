@@ -39,4 +39,5 @@ void main() {
       expect(result.toSet(), expected.toSet());
     });
   });
+  print(permutation('abad'));
 }
