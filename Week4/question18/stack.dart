@@ -8,11 +8,9 @@ stack is LIFO
 class Stack<T> {
   late List<T?> items;
   int top = -1;
-
   Stack(int capacity) {
     items = List.filled(capacity, null);
   }
-
   bool isEmpty() {
     return top == -1;
   }

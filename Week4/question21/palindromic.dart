@@ -34,5 +34,5 @@ String longestPalindrome(String s) {
   return res;
 }
 void main(){
-  print(longestPalindrome('ababsb'));
+  print(longestPalindrome('abbab'));
 }

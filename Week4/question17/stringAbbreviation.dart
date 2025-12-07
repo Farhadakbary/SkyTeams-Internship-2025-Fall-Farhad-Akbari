@@ -8,11 +8,11 @@ Example: "I am learning JavaScript" → "I a l J"
 String abbreviation(String sentence){
 
   List<String>words= sentence.split(' ');
-  List<String> initials=[];
+  List<String> abbreviations=[];
   for(var word in words){
     if(word.isNotEmpty){
-      initials.add(word[0]);
+      abbreviations.add(word[0]);
     }
   }
-  return initials.join(' ');
+  return abbreviations.join(' ');
 }

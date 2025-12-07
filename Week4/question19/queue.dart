@@ -41,6 +41,16 @@ class QueueUsingStacks<T> {
 
   @override
   String toString() {
-    return '[${[...stackPop.reversed, ...stackPush].join(', ')}]';
+    String result = '[';
+    for (int i = stackPop.length - 1; i >= 0; i--) {
+      result += stackPop[i].toString();
+      if (i != 0 || stackPush.isNotEmpty) result += ', ';
+    }
+    for (int i = 0; i < stackPush.length; i++) {
+      result += stackPush[i].toString();
+      if (i != stackPush.length - 1) result += ', ';
+    }
+    result += ']';
+    return result;
   }
 }
