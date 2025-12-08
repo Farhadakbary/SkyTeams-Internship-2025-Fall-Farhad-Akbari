@@ -10,7 +10,6 @@ import 'dart:io';
 void menuATM() {
   double balance = 1000.0;
   bool running = true;
-
   while (running) {
     print('\n--- ATM Menu ---');
     print('1. Withdraw');
