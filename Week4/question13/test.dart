@@ -6,7 +6,7 @@ void main() {
     test('returns true for valid pattern match', () {
       expect(isPattern('abba', 'dog cat cat dog'), true);
       expect(isPattern('abc', 'one two three'), true);
-      expect(isPattern('xyz', 'apple banana cherry'), true);
+      expect(isPattern('xyzz', 'apple banana cherry cherry'), true);
     });
 
     test('returns false for mismatched pattern', () {

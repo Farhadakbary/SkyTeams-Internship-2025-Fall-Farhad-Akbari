@@ -27,7 +27,6 @@ int secondLargest(List<int> arr) {
       }
     }
   }
-
   if (secondLargest == null) {
     throw ArgumentError("No second largest value found (all elements equal)");
   }
