@@ -5,7 +5,7 @@ Farhad Akbari
 Write a function that returns the number of levels in a binary tree.
 An empty tree has height 0, and a tree with only one node has height 1
  */
-import '../treeNode.dart';
+import 'treeNode.dart';
 int height(TreeNode? root) {
   if (root == null) return 0;
 
