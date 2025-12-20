@@ -8,6 +8,7 @@ A tree is symmetric if the left subtree is a mirror image of the right subtree.
 import '../question1/treeNode.dart';
 
 bool isSymmetric(TreeNode? root) {
+
   bool isMirror(TreeNode? a, TreeNode? b) {
     if (a == null && b == null) return true;
     if (a == null || b == null) return false;

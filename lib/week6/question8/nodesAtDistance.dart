@@ -9,16 +9,16 @@ import '../question1/treeNode.dart';
 List<int> nodesAtDistanceK(TreeNode? root, int k) {
   List<int> result = [];
 
-  void dfs(TreeNode? node, int d) {
+  void depth(TreeNode? node, int d) {
     if (node == null) return;
     if (d == k) {
       result.add(node.val);
       return;
     }
-    dfs(node.left, d + 1);
-    dfs(node.right, d + 1);
+    depth(node.left, d + 1);
+    depth(node.right, d + 1);
   }
 
-  dfs(root, 0);
+  depth(root, 0);
   return result;
 }
