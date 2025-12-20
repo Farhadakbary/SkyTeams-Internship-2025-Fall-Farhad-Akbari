@@ -19,6 +19,6 @@ TreeNode? sortedArray(List<int> arr) {
 
     return node;
   }
-
+  // not completed yet
   return build(0, arr.length - 1);
 }
